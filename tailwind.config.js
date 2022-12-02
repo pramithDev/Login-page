@@ -9,11 +9,17 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
+      fontFamily: {
+        Mulish: ['"Mulish"', "sans-serif"],
+      },
       colors: {
         mainBg1: "#F4F7FF",
         mainBg2: "#FFEDED",
+        primary: "#A30062",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
